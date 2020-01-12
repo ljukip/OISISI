@@ -10,7 +10,6 @@ import javax.swing.JToggleButton;
 
 import controller.PredmetiActionListener;
 import controller.ProfesoriActionListener;
-import controller.StudentiActionListener;
 
 public class SelectBar extends JPanel{
 
@@ -39,13 +38,10 @@ public class SelectBar extends JPanel{
 		select.add(tb2);
 		select.add(tb3);
 		
-		StudentiActionListener sa = new StudentiActionListener();
-		tb1.addActionListener(sa);
 		ProfesoriActionListener pa=new ProfesoriActionListener();
 		tb2.addActionListener(pa);
 		PredmetiActionListener pr=new PredmetiActionListener();
-		tb3.addActionListener(pr);	
-		
+		tb3.addActionListener(pr);
 		
 		select.setSize(screen.width, 40);
 		add(select);
